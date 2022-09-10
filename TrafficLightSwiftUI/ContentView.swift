@@ -34,7 +34,7 @@ struct ContentView: View {
                         .accentColor(Color.white)
                         .background(Color.blue)
                         .cornerRadius(20)
-                        .overlay(RoundedRectangle(cornerRadius: 15)
+                        .overlay(RoundedRectangle(cornerRadius: 20)
                             .stroke(Color.white,lineWidth: 4))
                 }
             }.padding()
