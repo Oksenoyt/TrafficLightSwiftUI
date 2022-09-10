@@ -17,13 +17,12 @@ struct CircleLightView: View {
                 width: UIScreen.main.bounds.width / 3,
                 height: UIScreen.main.bounds.width / 3
             )
-            .overlay(Circle().stroke(Color.black, lineWidth: 4))
-            .shadow(radius: 10)
+            .overlay(Circle().stroke(Color.white, lineWidth: 4))
     }
 }
 
 struct CircleLightView_Previews: PreviewProvider {
     static var previews: some View {
-        CircleLightView(color: .red)
+        CircleLightView(color: .blue)
     }
 }
