@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct CircleLightView: View {
+//    var id = UUID()
+    
     var color: Color
     
     var body: some View {
