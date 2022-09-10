@@ -2,7 +2,7 @@
 //  ContentView.swift
 //  TrafficLightSwiftUI
 //
-//  Created by Elenka on 10.09.2022.
+//  Created by Arseniy Oksenoyt on 10.09.2022.
 //
 
 import SwiftUI
