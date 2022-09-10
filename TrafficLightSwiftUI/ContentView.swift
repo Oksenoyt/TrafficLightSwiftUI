@@ -8,9 +8,24 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State private var tapCount = 0
+    
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        ZStack{
+            Color(.black)
+                .ignoresSafeArea()
+            VStack{
+                VStack {
+                    CircleLightView(color: .red)
+                    CircleLightView(color: .yellow)
+                    CircleLightView(color: .green)
+                    Spacer()
+                }
+                Button(action: { tapCount += 1 }) {
+                    Text("Switch Light").font(.title)
+                }
+            }.padding()
+        }
     }
 }
 

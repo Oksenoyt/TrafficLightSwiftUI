@@ -2,16 +2,21 @@
 //  CircleLightView.swift
 //  TrafficLightSwiftUI
 //
-//  Created by Elenka on 10.09.2022.
+//  Created by Arseniy Oksenoyt on 10.09.2022.
 //
 
 import SwiftUI
 
 struct CircleLightView: View {
+    var color: Color
+    
     var body: some View {
         Circle()
-            .foregroundColor(.red)
-            .frame(width: 150, height: 150)
+            .foregroundColor(color)
+            .frame(
+                width: UIScreen.main.bounds.width / 3,
+                height: UIScreen.main.bounds.width / 3
+            )
             .overlay(Circle().stroke(Color.black, lineWidth: 4))
             .shadow(radius: 10)
     }
@@ -19,6 +24,6 @@ struct CircleLightView: View {
 
 struct CircleLightView_Previews: PreviewProvider {
     static var previews: some View {
-        CircleLightView()
+        CircleLightView(color: .red)
     }
 }
