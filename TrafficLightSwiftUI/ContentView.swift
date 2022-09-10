@@ -24,7 +24,7 @@ struct ContentView: View {
             VStack{
                 VStack {
                     CircleLightView(color: .red).opacity(redColorOpacity)
-                    CircleLightView(color: .yellow).opacity(yellowColorOpacity).accessibilityLabel("yellow").accessibilityIdentifier("yellow")
+                    CircleLightView(color: .yellow).opacity(yellowColorOpacity)
                     CircleLightView(color: .green).opacity(greenColorOpacity)
                     Spacer()
                 }
