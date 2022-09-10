@@ -22,7 +22,7 @@ struct ContentView: View {
             Color(.black)
                 .ignoresSafeArea()
             VStack{
-                VStack {
+                VStack(spacing: 16.0) {
                     CircleLightView(color: .red).opacity(redColorOpacity)
                     CircleLightView(color: .yellow).opacity(yellowColorOpacity)
                     CircleLightView(color: .green).opacity(greenColorOpacity)
