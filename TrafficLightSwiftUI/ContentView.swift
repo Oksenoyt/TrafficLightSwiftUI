@@ -9,7 +9,7 @@ import SwiftUI
 
 struct ContentView: View {
     
-    @State private var buttonText = "BEGIN"
+    @State private var switchButtonText = "BEGIN"
     
     @State private var activeLight = 0
     
@@ -28,8 +28,8 @@ struct ContentView: View {
                     CircleLightView(color: .green).opacity(greenColorOpacity)
                     Spacer()
                 }
-                Button(action: buttonTapped) {
-                    Text(buttonText).font(.title)
+                Button(action: switchButtonTapped) {
+                    Text(switchButtonText).font(.title)
                         .frame(width: 170, height: 60)
                         .accentColor(Color.white)
                         .background(Color.blue)
@@ -41,8 +41,8 @@ struct ContentView: View {
         }
     }
     
-    private func buttonTapped() {
-        buttonText = "NEXT"
+    private func switchButtonTapped() {
+        switchButtonText = "NEXT"
         
         switch activeLight {
         case 1:
